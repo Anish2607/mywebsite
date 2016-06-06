@@ -22,7 +22,12 @@
                 </ul>
             </nav>
             <hr>
-        
+          <!--  <script> 
+                function showFunction() {
+                    document.getElementById("hi").style.display = "none";
+                }
+            </script>
+            -->
             <p style="font-size: 20px">University of Southern California: </px>
                 <hr style="width: 500px">
             <div class="course">
