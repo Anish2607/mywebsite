@@ -1,0 +1,23 @@
+.link{
+    font-weight: bold;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;    
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;    
+    text-decoration: underline;
+}
