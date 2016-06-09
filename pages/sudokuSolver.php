@@ -145,7 +145,7 @@
             }
         </script>
 
-        <form method="get" name="myform "action="<?php echo $_SERVER['PHP_SELF'];?>">
+        <form method="get" name="myform "action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
         <table style="width: auto; margin-left: auto; margin-right: auto;">
             <tbody>
                 <tr>
