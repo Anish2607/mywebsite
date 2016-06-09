@@ -20,10 +20,42 @@
                 </ul>
             </nav>
             <hr>
-        <p>
-            <A HREF="../classes/cs103.html"><I>CS 103</I></A>
-            <A HREF="../classes/cs104.html"><I>CS 104</I></A>
-        </p>
+        <?php
+            if(isset($_POST['submit']))
+            {
+                $name = $_POST["name"];
+                $from_email = $_POST["email"];
+                $message = $_POST["message"];
+                $subject = $_POST["subject"];
+                //echo $email."<br>";
+                $to = "anish.chelseafc@gmail.com";
+                // Always set content-type when sending HTML email
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                // More headers
+                $headers .= "From: $name  '$from_email' " . "\r\n";
+                // $headers .= "From: <$email>" . "\r\n";
+                //echo $headers;                
+            }
+            
+        ?>
+        <form method = "post" name="contactForm" action="">
+            Name: <input type="text" name="name"> <br>
+            Email: <input type="text" name="email"> <br>
+            Subject: <input type="text" name="subject"> <br>
+            Message: <textarea name="message" rows="5" cols="40"></textarea>
+            <input type="submit"  name="submit" value="submit" />
+        </form>
+        <?php
+            if(mail($to,$subject,$message,$headers))
+            {
+                echo "Email Sent";
+            }
+            else
+            {
+                echo "Error: Email not sent";
+            }
+        ?>
     </div>
 
        
