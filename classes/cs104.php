@@ -8,6 +8,7 @@
        
     </head>
     <body >
+        <?php include_once("../analyticstracking.php"); ?>
         <h2>Project Assignments: <h2>
         <div class = link>
             <a href="../assignments/cs104/CSCI%20104%20%E2%80%93%20HW%201.pdf"><I>PA1 - Memory, & Recursion</I></A>

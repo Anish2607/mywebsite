@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="../main.css">
     </head>
     <body>
+    <?php include_once("../analyticstracking.php"); ?>
     <?php
     if( ! ini_get('date.timezone') )
     {
@@ -111,7 +112,8 @@
                 } else {
                     $name = test_input($_POST["name"]);
                     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-                      $nameErr = "Only letters and white space allowed"; 
+                        $nameErr = "Only letters and white space allowed"; 
+                         $error = true;
                     }
                 }
 
@@ -121,7 +123,8 @@
                 } else {
                     $from_email = test_input($_POST["email"]);
                     if (!filter_var($from_email, FILTER_VALIDATE_EMAIL)) {
-                      $emailErr = "Invalid email format"; 
+                        $emailErr = "Invalid email format"; 
+                         $error = true;
                     }
                 }
 

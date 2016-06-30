@@ -11,6 +11,7 @@
         </style>
     </head>
     <body>
+    <?php include_once("../analyticstracking.php"); ?>
     <div id="main">
             <h1 style="font-family: Chiller; font-size: 4.5em; -webkit-margin-after: 0.1em; -webkit-margin-before: 0.3em;
                 padding: 0px;"><a href="../index.html">Anish Verma<a></h1>

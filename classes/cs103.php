@@ -8,6 +8,7 @@
        
     </head>
     <body>
+        <?php include_once("../analyticstracking.php"); ?>
         <h2>Project Assignments: <h2>
         <div class = link>
             <a href="../assignments/cs103/PA1 - Hailstone Conjecture.pdf"><I>PA1 - Hailstone Conjecture</I></A>
