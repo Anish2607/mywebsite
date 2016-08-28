@@ -95,8 +95,11 @@
                     document.cookie = "username="+uname.value+"; expires=Sat, 31 Dec 2016 12:00:00 UTC";
                 }
             </script>
+            <p style="color: white">
+                Hey! Welcome to my personal website. Feel free to look around using the navigation bar above. However, this website is still in development so please be patient. 
+            </p>
             <footer>
-                <a href="images/resume.jpg" target="_blank"> <img src="images/res_pic.png" width="90"></a>
+                <a href="images/resume.pdf" target="_blank"> <img src="images/res_pic.png" width="90"></a>
             </footer>
         </div>
        <!--<div >
